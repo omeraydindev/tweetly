@@ -22,6 +22,7 @@ class TweetShimmerBuilder {
 
     final mockTweetWidget = TweetWidget(
       tweet: mockTweet,
+      pfpShouldLoad: false,
       headerBuilder: () {
         return Column(
           children: [
@@ -55,7 +56,7 @@ class TweetShimmerBuilder {
       },
     );
 
-    const itemCount = 10;
+    const itemCount = 7;
     return Padding(
       padding: const EdgeInsets.only(top: 8),
       child: Column(

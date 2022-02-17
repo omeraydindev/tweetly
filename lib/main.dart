@@ -3,7 +3,7 @@ import 'package:tweetly/api/session.dart';
 
 import 'package:tweetly/screens/login.dart';
 
-const host = "https://tweetly-backend.herokuapp.com"; // todo
+const host = "https://tweetly-backend.herokuapp.com"; // Host URL
 const primaryColor = Color(0xFF17a2f3);
 const dividerColor = Color(0xFFcccccc);
 const maxTweetLength = 140;

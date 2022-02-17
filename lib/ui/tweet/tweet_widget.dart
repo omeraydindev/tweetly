@@ -18,6 +18,7 @@ class TweetWidget extends StatefulWidget {
     Key? key,
     required this.tweet,
     this.pfpClickable = true,
+    this.pfpShouldLoad = true,
     this.headerBuilder,
     this.contentBuilder,
     this.footerBuilder,
@@ -33,6 +34,7 @@ class TweetWidget extends StatefulWidget {
 
   final Tweet tweet;
   final bool pfpClickable;
+  final bool pfpShouldLoad;
   final ValueGetter<Widget>? headerBuilder;
   final ValueGetter<Widget>? contentBuilder;
   final ValueGetter<Widget>? footerBuilder;
@@ -76,7 +78,8 @@ class _TweetWidgetState extends State<TweetWidget> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          if (isRetweet) RetweetIndicator(retweetInfo: widget.tweet.retweetInfo!),
+          if (isRetweet)
+            RetweetIndicator(retweetInfo: widget.tweet.retweetInfo!),
           if (isRetweet) const SizedBox(height: 5),
           tweetWidget,
         ],
@@ -88,6 +91,7 @@ class _TweetWidgetState extends State<TweetWidget> {
     return ProfilePicture(
       user: widget.tweet.user,
       clickable: widget.pfpClickable,
+      shouldLoad: widget.pfpShouldLoad,
     );
   }
 

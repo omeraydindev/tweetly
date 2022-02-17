@@ -10,10 +10,12 @@ class ProfilePicture extends StatefulWidget {
     Key? key,
     required this.user,
     this.clickable = true,
+    this.shouldLoad = true,
   }) : super(key: key);
 
   final User user;
   final bool clickable;
+  final bool shouldLoad;
 
   @override
   State<ProfilePicture> createState() => _ProfilePictureState();
@@ -53,7 +55,11 @@ class _ProfilePictureState extends State<ProfilePicture> {
           );
         },
         progressIndicatorBuilder: (context, url, downloadProgress) {
-          return CircularProgressIndicator(value: downloadProgress.progress);
+          if (widget.shouldLoad) {
+            return CircularProgressIndicator(value: downloadProgress.progress);
+          } else {
+            return const CircleAvatar(child: Icon(Icons.account_circle));
+          }
         },
         errorWidget: (context, url, error) {
           return const CircleAvatar(child: Icon(Icons.account_circle));
