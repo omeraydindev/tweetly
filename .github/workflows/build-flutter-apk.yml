@@ -1,11 +1,12 @@
-name: Flutter CI
+name: Flutter Android CI
 
 # This workflow is triggered on pushes to the repository.
 
 on:
+  workflow_dispatch:
   push:
     branches:
-    - master
+    - main
     
 # on: push    # Default will running for every branch.
     
@@ -43,7 +44,15 @@ jobs:
     - run: flutter build apk
     
     # Upload generated apk to the artifacts.
-    - uses: actions/upload-artifact@v1
-      with:
-        name: release-apk
-        path: build/app/outputs/apk/release/app-release.apk
+    #- uses: actions/upload-artifact@v1
+    #  with:
+    #    name: release-apk
+    #    path: build/app/outputs/apk/release/app-release.apk
+    
+    - name: Upload release apk
+        uses: actions/upload-artifact@v2
+        if: ${{ !github.head_ref }}
+        with:
+          name: app-release
+          path: build/app/outputs/apk/release/app-release.apk
+        
