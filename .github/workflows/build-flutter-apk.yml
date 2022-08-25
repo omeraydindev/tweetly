@@ -50,9 +50,9 @@ jobs:
     #    path: build/app/outputs/apk/release/app-release.apk
     
     - name: Upload release apk
-        uses: actions/upload-artifact@v2
-        if: ${{ !github.head_ref }}
-        with:
-          name: app-release
-          path: build/app/outputs/apk/release/app-release.apk
+      uses: actions/upload-artifact@v2
+      if: ${{ !github.head_ref }}
+      with:
+        name: app-release
+        path: build/app/outputs/apk/release/app-release.apk
         
