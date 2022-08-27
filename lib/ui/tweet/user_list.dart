@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:tweetly/main.dart';
+import 'package:tweetly/constants.dart';
 import 'package:tweetly/models/user.dart';
 import 'package:tweetly/screens/profile.dart';
 import 'package:tweetly/ui/tweet/profile_picture.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tweetly/main.dart';
+import 'package:tweetly/constants.dart';
 import 'package:tweetly/models/tweet.dart';
 import 'package:tweetly/screens/thread.dart';
 import 'package:tweetly/ui/tweet/tweet_widget.dart';

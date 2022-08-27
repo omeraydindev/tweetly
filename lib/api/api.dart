@@ -8,7 +8,7 @@ import 'package:tweetly/api/session.dart';
 import 'package:tweetly/models/reply_info.dart';
 
 import 'package:tweetly/models/tweet.dart';
-import 'package:tweetly/main.dart';
+import 'package:tweetly/constants.dart';
 import 'package:tweetly/models/user.dart';
 
 class API {

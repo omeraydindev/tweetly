@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
-import 'package:tweetly/main.dart';
+import 'package:tweetly/constants.dart';
 import 'package:tweetly/models/tweet.dart';
 import 'package:timeago/timeago.dart' as timeago;
 import 'package:tweetly/models/user.dart';

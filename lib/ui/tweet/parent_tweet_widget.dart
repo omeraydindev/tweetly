@@ -2,7 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
-import 'package:tweetly/main.dart';
+import 'package:tweetly/constants.dart';
 import 'package:tweetly/models/tweet.dart';
 import 'package:tweetly/screens/user_list.dart';
 import 'package:tweetly/ui/tweet/images_grid.dart';

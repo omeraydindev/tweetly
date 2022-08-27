@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tweetly/api/api.dart';
-import 'package:tweetly/main.dart';
+import 'package:tweetly/constants.dart';
 import 'package:tweetly/models/user.dart';
 import 'package:tweetly/ui/tweet/user_list.dart';
 
