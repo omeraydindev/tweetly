@@ -3,6 +3,9 @@ A very basic Twitter clone I wrote as my first Flutter project.
 
 Since this project was put together in a very short time and solely for learning purposes, I didn't use fancy state management solutions like [Riverpod](https://riverpod.dev/) or [BLoC](https://bloclibrary.dev/) -- instead, I called `setState` everywhere, passed callbacks and [ValueNotifier](https://api.flutter.dev/flutter/foundation/ValueNotifier-class.html)s down the widget tree etc.
 
+## I find a bug
+Contact me
+
 ## Features
 Some features include: Posting a tweet, retweeting, replying to tweets, liking tweets, following other users, editing your profile, searching in all users and a few more. Threads don't exactly work like you'd expect them to, but that was beyond the scope of this project.
 
